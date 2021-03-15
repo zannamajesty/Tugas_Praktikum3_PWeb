@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objek Document</title>
+</head>
+<body>
+<script language="javascript">
+
+//<!-
+
+//membuat fungsi dengan mengubah warna latar belakang pada halaman web
+function ubahWarnaLB(warna) {
+document.bgColor=warna;
+}
+
+//membuat fungsi dengan mengubah warna teks view pada halaman web
+function ubahWarnaLD(warna){
+document.fgColor=warna;
+}
+
+//->
+</script>
+<h1>TES</h1> <!--membuat heading 1 dengan teks "TES"-->
+	<form> <!--membuat form-->
+		<!--membuat button dengan latar belakang warna hijau pada halaman web ketika di klik-->
+		<input type ="button" value = "later belakang hijau" onclick = "ubahWarnaLB('green')">
+		<!--membuat button dengan latar belakang warna putih pada halaman web ketika di klik-->
+		<input type ="button" value = "later belakang putih" onclick = "ubahWarnaLB('white')">
+		<!--membuat button dengan warna kuning pada teks view ketika di klik-->
+		<input type ="button" value = "teks kuning" onclick = "ubahWarnaLD('yellow')">
+		<!--membuat button dengan warna biru pada teks view ketika di klik-->
+		<input type ="button" value = "teks biru" onclick = "ubahWarnaLD('blue')">
+	</form>
+</body>
+</html>

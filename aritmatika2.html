@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Program Javascript</title>
+</head>
+<script language="javascript">
+	function test (val1, val2) //membuat function test dengan variabel val1 dan val2
+	{
+		document.write("<br>"+"perkalian : val1*val2"+"<br>") //menampilkan perkalian val1 dan val2
+		document.write(val1*val2) //menampilkan output perkalian dari val1 dan val2
+		document.write("<br>"+"pembagian : val1/val2"+"<br>") //menampilkan pembagian val1 dan val2
+		document.write(val1/val2) //menampilkan output pembagian dari val1 dan val2
+		document.write("<br>"+"penjumlahan : val1+val2"+"<br>") //menampilkan penjumlahan val1 dan val2
+		document.write(val1+val2) //menampilkan output penjumlahan dari val1 dan val2
+		document.write("<br>"+"pengurangan : val1-val2"+"<br>") //menampilkan pengurangan val1 dan val2
+		document.write(val1-val2) //menampilkan output pengurangan dari val1 dan val2
+		document.write("<br>"+"modulus : val1%val2"+"<br>") //menampilkan modulus val1 dan val2
+		document.write(val1%val2) //menampilkan output modulus dari val1 dan val2
+	}
+</script>
+<body>
+	<!--membuat button dengan pada saat di klik akan memanggil function test dengan nilai val1=9 dan val2=4-->
+	<input type="button" name="button1" value="arithmetic" onclick="test(9,4)">
+</body>
+</html>

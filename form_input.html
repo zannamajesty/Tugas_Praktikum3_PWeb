@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<script language="javascript">
+	
+function test() {
+var val1=document.kirim.T1.value //membuat variabel val1
+if (val1%2==0) //jika variabel val1 memiliki nilai modulus 2 maka nilai sama dengan 0
+
+document.kirim.T2.value="Bilangan Genap" //nilai dari document.kirim.T2.value adalah bil genap
+else
+document.kirim.T2.value="Bilangan Ganjil" //nilai dari document.kirim.T2.value adalah bil ganjil
+	}
+</script>
+<body>
+<!--membuat form-->
+<form method="post" name="kirim">
+<!--membuat paragraph yang menampilkan hasil output berupa textbox yang disertai dengan button-->
+<p>Bil <input type="text" name="T1" size="20"> Merupakan Bil <input type="text" name="T2" size="20"></p>
+	
+<p><input type="button" name="B1" value="TEBAK" onclick=test()></p>
+</form>
+</body>
+</html>

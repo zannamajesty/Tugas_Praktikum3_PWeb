@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<script language="javascript">
+
+	function konversi() //membuat fungsi untuk mengkonversi dari angka ke huruf
+	{
+		var angka=document.ubah.inputangka.value //membuat variabel angka
+
+		if (angka>100) //membuat program menganalisis yang dimana angka yang dimasukkan lebih dari 100
+			document.ubah.hasil.value="Masukkan angka 0-100" //menampilkan pesan agar user memasukkan angka 0-100
+		else if(angka>=81) //jika angka lebih dari 81 bernilai A
+			document.ubah.hasil.value="A" //output : A
+		else if(angka>=71) //jika angka lebih dari 71 bernilai AB
+			document.ubah.hasil.value="AB" //output : AB
+		else if(angka>=66) //jika angka lebih dari 66 bernilai B
+			document.ubah.hasil.value="B" //output : B
+		else if(angka>=61) //jika angka lebih dari 61 bernilai BC
+			document.ubah.hasil.value="BC" //output : BC
+		else if(angka>=56) //jika angka lebih dari 56 bernilai C
+			document.ubah.hasil.value="C" //output : C
+		else if(angka>=41) //jika angka lebih dari 41 bernilai D
+			document.ubah.hasil.value="D" //output : D
+		else if(angka>=0) //jika angka lebih dari 0 bernilai E
+			document.ubah.hasil.value="E" //output : E
+		else
+			document.ubah.hasil.value="Masukkan angka 0-100" //menampilkan pesan agar user memasukkan angka 0-100
+	}
+</script>
+<body>
+<form method="post" name="ubah"> <!--membuat form dengan method "post" dan dengan nama "ubah"-->
+
+	<p>ANGKA<input type="text" name="inputangka" size="20"></p> <!--membuat textbox yang dibuat untuk menginput nilai angka-->
+
+	<p><input type="button" name="btnKonversi" value="KONVERSI" onclick=konversi()></p> <!-- membuat paragraph yang berupa button yang akan memanggil function konversi ketika di klik yang akan mengkonversi dari angka ke huruf-->
+	
+	<p>HURUF<input type="text" name="hasil" size="20"></p> <!--membuat textbox yang dibuat untuk menampilkan huruf dari hasil konversi-->
+</form>
+</body>
+</html>

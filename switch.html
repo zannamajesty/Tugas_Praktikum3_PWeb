@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Program Berbasis Javascript</title>
+</head>
+<script language="javascript">
+	function test() 
+	{
+	val1=window.prompt("Input Nilai (1-5) :") //membuat variabel val1 yang ditampilkan dengan window prompt dengan isi teks input nilai 1-5
+	switch(val1) //membuat switch untuk memanggil variabel val1
+	{
+			case "1": //membuat case 1
+			document.write("bilangan satu") //mencetak bil 1
+			break
+
+			case "2": //membuat case 2
+			document.write("bilangan dua") //mencetak bil 2
+			break
+
+			case "3": //membuat case 3
+			document.write("bilangan tiga") //mencetak bil 3
+			break
+
+			case "4": //membuat case 4
+			document.write("bilangan empat") //mencetak bil 4
+			break
+
+			case "5": //membuat case 5
+			document.write("bilangan lima") //mencetak bil 5
+			break
+
+			default:
+			document.write("bilangan lainnya") //mencetak bilangan lainnya
+	}
+	}
+</script>
+<body>
+	<input type="button" name="button1" value="switch" onclick=test()> <!--membuat button dengan pada saat di klik akan memanggil switch-->
+</body>
+</html>

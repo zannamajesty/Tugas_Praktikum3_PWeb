@@ -1,0 +1,80 @@
+<html>
+<head>
+</head>
+<script language="javascript">
+	//membuat fungsi untuk penjumlahan
+	function tambah() 
+	{
+		//membuat variabel angka1
+		var angka1=parseFloat(document.hitung.bil1.value)
+		
+		//membuat variabel angka2
+		var angka2=parseFloat(document.hitung.bil2.value)
+
+		//hasil penjumlahan
+		document.hitung.hasil.value=angka1+angka2
+	}
+
+	//membuat fungsi untuk pengurangan
+	function kurang() 
+	{
+		//membuat variabel angka1
+		var angka1=parseFloat(document.hitung.bil1.value)
+		
+		//membuat variabel angka2
+		var angka2=parseFloat(document.hitung.bil2.value)
+
+		//hasil pengurangan
+		document.hitung.hasil.value=angka1-angka2
+	}
+
+	//membuat fungsi untuk perkalian
+	function kali() 
+	{
+		//membuat variabel angka1
+		var angka1=parseFloat(document.hitung.bil1.value)
+		
+		//membuat variabel angka2
+		var angka2=parseFloat(document.hitung.bil2.value)
+
+		//hasil perkalian
+		document.hitung.hasil.value=angka1*angka2
+	}
+
+	//membuat fungsi untuk pembagian
+	function bagi() 
+	{
+		//membuat variabel angka1
+		var angka1=parseFloat(document.hitung.bil1.value)
+		
+		//membuat variabel angka2
+		var angka2=parseFloat(document.hitung.bil2.value)
+
+		//hasil pembagian
+		document.hitung.hasil.value=angka1/angka2
+	}
+</script>
+<body>
+<form method="post" name="hitung"> <!--membuat form dengan method "post" dan dengan nama "hitung" -->
+
+	<p>Bil 1<input type="text" name="bil1" size="20"></p> <!--membuat paragraph yang berupa textbox untuk menginput nilai bil 1-->
+	
+	<p>Bil 2<input type="text" name="bil2" size="20"></p> <!--membuat paragraph yang berupa textbox untuk menginput nilai bil 2-->
+
+	<p><input type="button" name="btnTambah" value="+" onclick=tambah() style="float:left; margin-left:1%"></p> <!--membuat paragraph yang berupa button untuk penjumlahan ketika di klik-->
+	
+	<p><input type="button" name="btnKurang" value="-" onclick=kurang() style="float:left; margin-left:1%"></p> <!--membuat paragraph yang berupa button untuk pengurangan ketika di klik-->
+	
+	<p><input type="button" name="btnKali" value="x" onclick=kali() style="float:left; margin-left:1%"></p> <!--membuat paragraph yang berupa button untuk perkalian ketika di klik-->
+	
+	<p><input type="button" name="btnBagi" value="/" onclick=bagi() style="float:left; margin-left:1%"></p> <!--membuat paragraph yang berupa button untuk pembagian ketika di klik-->
+	
+	<br>
+	<p>HASIL<input type="text" name="hasil" size="20"></p> <!--membuat paragraph yang berupa textbox untuk menampilkan hasil-->
+	
+	<script language="javascript">
+		document.write("Update terakhir pada "+document.lastModified); //membuat program meng-update waktu untuk mengetahui kapan terakhir program digunakan
+	</script>
+</form>
+</body>
+</html>
